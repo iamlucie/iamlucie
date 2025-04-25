@@ -14,19 +14,19 @@ body{
 
 @font-face {
   font-family: GT Walsheim;
-  src: url(assets/fonts/GT-Walsheim-Bold.woff);
+  src: url(/fonts/GT-Walsheim-Bold.woff);
   font-weight: bold;
 }
 
 @font-face {
   font-family: GT Walsheim;
-  src: url(assets/fonts/GT-Walsheim-Light.woff);
+  src: url(/fonts/GT-Walsheim-Light.woff);
   font-weight: light;
 }
 
 @font-face {
   font-family: GT Walsheim;
-  src: url(assets/fonts/GT-Walsheim-Medium.woff);
+  src: url(/fonts/GT-Walsheim-Medium.woff);
   font-weight:normal;
 }
 
