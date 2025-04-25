@@ -78,7 +78,7 @@ body:before {
     transform: scale(1);
     width: 100vw;
     z-index: 0;
-    background-image: url('assets/bg.jpg?v=e0f67f7f');
+    background-image: url('images/bg.jpg?v=e0f67f7f');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;

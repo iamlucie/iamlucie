@@ -1,0 +1,108 @@
+/* kentico.html specific */
+
+body{
+ /*  background-color: #e0f3ff; */
+/*   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+  color:#000;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+@font-face {
+  font-family: GT Walsheim;
+  src: url(assets/fonts/GT-Walsheim-Bold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: GT Walsheim;
+  src: url(assets/fonts/GT-Walsheim-Light.woff);
+  font-weight: light;
+}
+
+@font-face {
+  font-family: GT Walsheim;
+  src: url(assets/fonts/GT-Walsheim-Medium.woff);
+  font-weight:normal;
+}
+
+header h1 {
+  font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+/*   font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; */
+  color: #000;
+  font-size: 3.333rem;
+  font-weight:bold;
+}
+
+header p {
+  font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+  margin-top:.667rem;
+  font-size: 1.667rem;
+  color: #020202;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 1.667rem;
+  font-weight: light;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 65ch;
+}
+
+
+.image-block {
+   border-radius: 16px;
+  }
+
+.custom-block{
+  border-radius: 12px;
+  margin-bottom: 4rem;
+ }  
+
+ .image-gallery,
+ .closing-image img{
+  border-radius: 6px;
+ }
+
+
+
+  .progress-box strong {
+    font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+    font-size: 1.667rem;
+  }
+
+  .footnote {
+    font-size: 1rem;
+    color: #300A45;
+    font-weight: normal;
+    font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+  }
+
+/*   .progress-box li::marker {
+    color: rgba(240, 90, 34, 1);
+  } */
+
+
+.closing-image {
+    width: 25%; /* This will span 1/5th of the container width */
+    margin-top: 30px; /* Optional: Adds some space above the image */
+    margin-left: auto; /* This centers the image horizontally */
+    margin-right: auto; /* This centers the image horizontally */
+    display: block; /* Ensures the image block is a block-level element */
+  }
+  
+  .closing-image img {
+    width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Make sure the image is fully visible without distortion */
+  }
+
+  .sticky-back-btn {
+    border-radius: 0 0 16px 0;
+  }
