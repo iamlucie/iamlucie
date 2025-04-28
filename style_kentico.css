@@ -14,13 +14,13 @@ body{
 
 @font-face {
   font-family: GT Walsheim;
-  src: url(assets/fonts/GT-Walsheim-Bold.woff);
+  src: url(https://download.kentico.com/Assets/GT-Walsheim-Bold.woff);
   font-weight: bold;
 }
 
 @font-face {
   font-family: GT Walsheim;
-  src: url(assets/fonts/GT-Walsheim-Light.woff);
+  src: url(https://download.kentico.com/Assets/GT-Walsheim-Light.woff);
   font-weight: light;
 }
 /* 
@@ -32,7 +32,7 @@ body{
 
 @font-face {
   font-family: GT Walsheim;
-  src: url(assets/fonts/GT-Walsheim-Regular.woff);
+  src: url(https://download.kentico.com/Assets/GT-Walsheim-Regular.woff);
   font-weight:normal;
 }
 
