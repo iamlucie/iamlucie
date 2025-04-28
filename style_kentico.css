@@ -12,7 +12,7 @@ body{
   padding-top: 6rem;
 }
 
-@font-face {
+/* @font-face {
   font-family: GT Walsheim;
   src: url(https://download.kentico.com/Assets/GT-Walsheim-Bold.woff);
   font-weight: bold;
@@ -21,20 +21,22 @@ body{
 @font-face {
   font-family: GT Walsheim;
   src: url(https://download.kentico.com/Assets/GT-Walsheim-Light.woff);
-  font-weight: light;
-}
+  font-weight: light; 
+}*/
 /* 
 @font-face {
   font-family: GT Walsheim;
   src: url(assets/fonts/GT-Walsheim-Medium.woff);
   font-weight:normal;
 } */
-
+/* 
 @font-face {
   font-family: GT Walsheim;
   src: url(https://download.kentico.com/Assets/GT-Walsheim-Regular.woff);
   font-weight:normal;
-}
+} */
+
+@font-face{font-family:"GT Walsheim";src:url("https://download.kentico.com/Assets/GT-Walsheim-Light.woff");font-weight:100;font-display:swap;font-style:normal}@font-face{font-family:"GT Walsheim";src:url("https://download.kentico.com/Assets/GT-Walsheim-Regular.woff");font-weight:400;font-display:swap;font-style:normal}@font-face{font-family:"GT Walsheim";src:url("https://download.kentico.com/Assets/GT-Walsheim-Medium.woff");font-weight:500;font-display:swap;font-style:normal}@font-face{font-family:"GT Walsheim";src:url("https://download.kentico.com/Assets/GT-Walsheim-Bold.woff");font-weight:700;font-display:swap;font-style:normal}
 
 header h1 {
   font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
