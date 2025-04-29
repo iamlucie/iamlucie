@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucie-Inspired Layout with Video</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_kontent.css" />
+</head>
+<body class="kontent-temp">
+    <!-- Sticky Close Button -->
+    <a href="javascript:history.back()" class="sticky-back-btn" title="Go Back">←</a>
+    <div class="container">
+        <div class="case-study-block">
+        <img src="assets/images" alt="Case study as img" />
+        </div>
+        <div class="image-block" id="videoContainer1">
+        <img src="assets/images/placeholder_video_kontent.png" alt="Click to play video" />
+        <div class="play-button" onclick="playVideo('videoContainer1', '5h1BPld6zSI', 'assets/images/placeholder_video_kontent.png')"></div>
+        </div>
+        <div class="text-block">
+
+          <p class="footnote">
+            Note: At the time I worked on this project, Kontent.ai was still an internal initiative within Kentico. The UI walkthrough shown here is based on a demo environment and does not include production data. If you want to read more about design process for the condition builder, check out my article <a href="https://medium.com/@iamlucie/designing-a-condition-builder-a-tweak-that-eased-my-life-9234d029c4a3" target="_blank">Designing a condition builder: A tweak that made everything easier</a> on Medium.com. 
+          </p>
+        </div>
+    </div>
+
+
+  <script>
+    let players = {}; // Store each player by container ID
+  
+    // Generic function to play a video
+    function playVideo(containerId, videoId, placeholderSrc) {
+      const container = document.getElementById(containerId);
+      container.dataset.placeholder = placeholderSrc; // store image path for later
+      container.dataset.containerId = containerId; // store ID for later
+      container.innerHTML = `<div id="ytplayer-${containerId}"></div>`;
+  
+      players[containerId] = new YT.Player(`ytplayer-${containerId}`, {
+        height: '100%',
+        width: '100%',
+        videoId: videoId,
+        playerVars: {
+          autoplay: 1,
+          rel: 0,
+          modestbranding: 1,
+          controls: 1
+        },
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+  
+    // Restore the original image when video ends
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.ENDED) {
+        const iframe = event.target.getIframe();
+        const container = iframe.closest('.image-block');
+        const placeholder = container.dataset.placeholder;
+        const containerId = container.dataset.containerId;
+  
+        container.innerHTML = `
+          <img src="${placeholder}" alt="Click to play video" />
+          <div class="play-button" onclick="playVideo('${containerId}', '${event.target.getVideoData().video_id}', '${placeholder}')"></div>
+        `;
+      }
+    }
+  </script>
+  
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>

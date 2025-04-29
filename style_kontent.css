@@ -1,0 +1,62 @@
+/* kontent_temp.html specific */
+body{
+  padding-top: 0;
+}
+
+
+.kontent-temp{
+    background-color: #8669A9;
+    font-family: Arial, sans-serif;
+    color:#fff;
+    border-radius: 0;
+  }
+  
+  .kontent-temp div.container {
+    max-width: 1402px;
+    margin: 0 auto;
+    padding: 0rem;
+  }
+  
+  .case-study-block {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 0;
+  }
+  
+  .case-study-block img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+  }
+
+  .image-block{
+    border-radius: 0;
+  }
+
+  .footnote, .footnote a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .footnote a:hover {
+    color: #BEE2E8;
+  }
+
+
+  /* Style for the sticky close button */
+  .sticky-back-btn {
+    background-color: #EF5921; /* Button background color */
+  }
+  
+  /* Hover effect */
+  .sticky-back-btn:hover {
+    background-color: #e44810; /* Lighter color on hover */
+  }
+  
+  /* Focus state for accessibility */
+  .sticky-back-btn:focus {
+    box-shadow: 0 0 0 4px rgba(255, 77, 0, 0.5); /* Add custom focus ring */
+  }
